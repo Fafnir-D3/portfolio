@@ -15,10 +15,10 @@ function App() {
             <Route exact path="/">
               <Home/>
             </Route>
-            <Route exact path="/curriculo">
+            <Route path="#/curriculo">
               <Curriculo/>
             </Route>
-            <Route path="/ProjectDetail/:id">
+            <Route path="#/ProjectDetail/:id">
               <ProjectDetail/>
             </Route>
           </Switch>
