@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import { Image } from "react-native";
-import {Link, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import useFetch from './useFetch';
 import 'react-slideshow-image/dist/styles.css'
 

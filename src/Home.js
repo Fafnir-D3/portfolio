@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SideBar from './SideBar';
 import ProjectList from './ProjectList';
 import useFetch from './useFetch';
@@ -9,6 +9,8 @@ const Home = () => {
 
     return ( 
         <div className="w3-row home">
+            {isPending && <div>Loading...</div> }
+            {error && <div>Error</div> }
             <h1><b className="w3-text-pink" style={{fontFamily: "Abril Text"}}>Projetos</b></h1>
             {projects && <ProjectList projects={projects}/>}
             <SideBar />
