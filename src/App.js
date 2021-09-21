@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Home from './Home';
 import Curriculo from './Curriculo';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import ProjectDetail from './ProjectDetail';
 
 function App() {
