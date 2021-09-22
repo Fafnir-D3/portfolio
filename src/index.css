@@ -33,6 +33,14 @@
   color: #ff5555;
 }
 
+.link a {
+  color: #00bcd4;
+}
+
+.link a:hover {
+  color: #ff5555;
+}
+
 .each-slide > div {
   display: flex;
   align-items: center;

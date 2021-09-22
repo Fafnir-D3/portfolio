@@ -2,19 +2,18 @@ import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import { Image } from "react-native";
 import {useParams} from "react-router-dom";
-import useFetch from './useFetch';
-import 'react-slideshow-image/dist/styles.css'
+import 'react-slideshow-image/dist/styles.css';
+import data from './db.json';
 
 const ProjectDetail = () => {
 
     const {id}=useParams();
-    const{ data: project, isPending, error } = useFetch('http://localhost:8000/projects/' + id);
+
+    const project=data.projects.at(id-1);
 
     return ( 
         <div className="project-detail">
-            {isPending && <div>Loading...</div> }
-            {error && <div>Error</div> }
-            {project && (
+            {data && (
             
             <div className="project">
                 <div>

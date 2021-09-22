@@ -8,7 +8,7 @@ const ProjectList = ({projects}) => {
             <div class="w3-col l8 s12 project-list">
             
                 {projects.map(project => (
-                <div class="w3-card-4 w3-margin w3-white" style={{}} key={project.id}>
+                <div class="w3-card-4 w3-margin w3-white" key={project.id}>
                     <Image source={project.img} alt="Sem Imagem" style={{resizeMode: "cover",height: 500,"width": "100%"}}/>
                     <div class="w3-container">
                         <h3><b>{project.name}</b></h3>
