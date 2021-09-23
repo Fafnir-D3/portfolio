@@ -7,7 +7,7 @@
             "description":"Prototipo de um site de gerenciamento de contas bancárias feito em java usando banco de dados PostgreSQL.",
             "slides":["/img/Index.png","/img/banco2.png","/img/banco3.png"],
             "extras":["/img/banco4.png","/img/banco5.png"],
-            "maisInfo":"O projeto é funcional e pode ser testado no link com o CPF : 123.456.789-00 e senha: 123.",
+            "maisInfo":"    O projeto é funcional e pode ser testado no link com o CPF : 123.456.789-00 e senha: 123. O foco do projeto era o back-end do site e interação com o BD e foi a parte que dediquei mais tempo, mas também fiz o front-end bem simples para facilitar os testes como usuário. O Documento ao lado explica em detalhes os requisitos do sistema e as funcionalidades e foi seguido a risca e avaliado pelo professor. Na versão online tive que fazer pequenas mudanças para conseguir hospedar o site, o banco de dados foi alterado para PostgreSQL e alguns arquivos DAO foram alterados para se adequar a nova sintaxe.",
             "tecnologias":["html","css","jQuery","Bootstrap","java","javaScript","SQL","MySQL","PostgreSQL"],
             "link":"https://bank-simulator.herokuapp.com/",
             "id": 1
@@ -19,7 +19,7 @@
             "description":"Simulador de protocolos de rede como CSMA e ALOHA feito em python.",
             "slides":["/img/redes.png","/img/redes2.png","/img/redes3.png"],
             "extras":["/img/redes4.png","/img/redes5.png"],
-            "maisInfo":"Experimentos simulando protocolos reais de rede Aloha puro/slotted, CSMA e um hipotético a fim de comparar a eficiência quanto ao número de colisões, pacotes entregues e vazão. No link acima se encontra um relatório analisando os dados, além de gráficos em Excel demonstrando a performance de cada protocolo.",
+            "maisInfo":"    Experimentos simulando protocolos reais de rede Aloha puro/slotted, CSMA e um hipotético a fim de comparar a eficiência quanto ao número de colisões, pacotes entregues e vazão. No link acima se encontra um relatório analisando os dados, além de gráficos em Excel demonstrando a performance de cada protocolo.",
             "tecnologias":["python","Aloha","CSMA","Excel"],
             "link":"https://github.com/Fafnir-D3/SimuladorRedes",
             "id": 2
@@ -31,7 +31,7 @@
             "description": "Prototipo de um jogo de luta estilo 'Brawl' feito em python.",
             "slides":["/img/jogo.png","/img/jogo2.png","/img/jogo3.png"],
             "extras":["/img/jogo4.png","/img/jogo5.png"],
-            "maisInfo":"Esse foi meu primeiro projeto em python feito assim que entrei na faculdade. A ideia era aprender os basicos de programação como if/else, for/while, fazendo algo divertido invez dos mesmos exercícios genéricos. O jogo é bem simples, são 2 jogadores lutando numa arena, podem ser escolhidos 6 personagens diferentes e cada personagem tem um ataque forte, um ataque fraco e um dash. Além disso bônus aleatórios podem aparecer na arena, como vida extra ou mais velocidade. Por fim, o jogador que tiver sua barra de vida reduzida a 0 perde. ",
+            "maisInfo":"    Esse foi meu primeiro projeto em python feito assim que entrei na faculdade. A ideia era aprender os basicos de programação como if/else, for/while, fazendo algo divertido invez dos mesmos exercícios genéricos. O jogo é bem simples, são 2 jogadores lutando numa arena, podem ser escolhidos 6 personagens diferentes e cada personagem tem um ataque forte, um ataque fraco e um dash. Além disso bônus aleatórios podem aparecer na arena, como vida extra ou mais velocidade. Por fim, o jogador que tiver sua barra de vida reduzida a 0 perde. ",
             "tecnologias":["python","pygame","Game Design","Pixel Art"],
             "link":"",
             "id": 3
