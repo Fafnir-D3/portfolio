@@ -4,7 +4,7 @@
             "name": "Bank Simulator",
             "img":"/img/Index.png",
             "date":"15/09/2021",
-            "description":"Prototipo de um site de gerenciamento de contas bancárias feito em java usando banco de dados PostgreSQL.",
+            "description":"Prototipo de um site de gerenciamento de contas bancárias.",
             "slides":["/img/Index.png","/img/banco2.png","/img/banco3.png"],
             "extras":["/img/banco4.png","/img/banco5.png"],
             "maisInfo":"O projeto é funcional e pode ser testado no link com o CPF : 123.456.789-00 e senha: 123.",

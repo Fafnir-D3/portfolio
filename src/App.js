@@ -8,9 +8,9 @@ function App() {
 
   return (
     <Router>
-      <div className="App w3-content" style={{maxWidth: 1400}}>
+      <div className=" w3-content light-grey" style={{maxWidth:2000, marginTop:46}}>
       <Navbar />
-        <div className="content">
+        <div>
           <Switch>
             <Route exact path="/">
               <Home/>

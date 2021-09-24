@@ -4,7 +4,7 @@
             "name": "Bank Simulator",
             "img":"/img/Index.png",
             "date":"15/09/2021",
-            "description":"Prototipo de um site de gerenciamento de contas bancárias feito em java usando banco de dados PostgreSQL.",
+            "description":"Prototipo de um site de gerenciamento de contas bancárias.",
             "slides":["/img/Index.png","/img/banco2.png","/img/banco3.png"],
             "extras":["/img/banco4.png","/img/banco5.png"],
             "maisInfo":"    O projeto é funcional e pode ser testado no link com o CPF : 123.456.789-00 e senha: 123. O foco do projeto era o back-end do site e interação com o BD e foi a parte que dediquei mais tempo, mas também fiz o front-end bem simples para facilitar os testes como usuário. O Documento ao lado explica em detalhes os requisitos do sistema e as funcionalidades e foi seguido a risca e avaliado pelo professor. Na versão online tive que fazer pequenas mudanças para conseguir hospedar o site, o banco de dados foi alterado para PostgreSQL e alguns arquivos DAO foram alterados para se adequar a nova sintaxe.",
@@ -33,7 +33,7 @@
             "extras":["/img/jogo4.png","/img/jogo5.png"],
             "maisInfo":"    Esse foi meu primeiro projeto em python feito assim que entrei na faculdade. A ideia era aprender os basicos de programação como if/else, for/while, fazendo algo divertido invez dos mesmos exercícios genéricos. O jogo é bem simples, são 2 jogadores lutando numa arena, podem ser escolhidos 6 personagens diferentes e cada personagem tem um ataque forte, um ataque fraco e um dash. Além disso bônus aleatórios podem aparecer na arena, como vida extra ou mais velocidade. Por fim, o jogador que tiver sua barra de vida reduzida a 0 perde. ",
             "tecnologias":["python","pygame","Game Design","Pixel Art"],
-            "link":"",
+            "link":"#/ProjectDetail/3",
             "id": 3
         }
     ],
