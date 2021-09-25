@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
-import {projects} from './db.json';
 import { HashLink } from 'react-router-hash-link';
 
-const Navbar = () => {
+const Navbar = ({projects}) => {
     return (  
         <div class="w3-top">
             <div class="w3-bar dark-grey w3-card">
-                <Link className="w3-bar-item w3-button w3-padding-large" to="/">HOME</Link>
+                <HashLink  class="w3-bar-item w3-button w3-padding-large w3-hide-small" smooth to="/#home">HOME</HashLink>
                 <Link className="w3-bar-item w3-button w3-padding-large w3-hide-small" to="/curriculo">CURRÍCULO</Link>
-                <HashLink  class="w3-bar-item w3-button w3-padding-large w3-hide-small" smooth to="/#contatos">CONTACT</HashLink>
+                <HashLink  class="w3-bar-item w3-button w3-padding-large w3-hide-small" smooth to="/#contatos">CONTATOS</HashLink>
                 <div class="w3-dropdown-hover w3-hide-small">
                 <button class="w3-padding-large w3-button" title="More">PROJETOS <i class="fa fa-caret-down"></i></button>     
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">

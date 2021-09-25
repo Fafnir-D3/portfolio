@@ -3,23 +3,24 @@ import Home from './Home';
 import Curriculo from './Curriculo';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import ProjectDetail from './ProjectDetail';
+import data from './db.json';
 
 function App() {
 
   return (
     <Router>
       <div className=" w3-content light-grey" style={{maxWidth:2000, marginTop:46}}>
-      <Navbar />
+      <Navbar projects={data.projects}/>
         <div>
           <Switch>
             <Route exact path="/">
-              <Home/>
+              <Home projects={data.projects}/>
             </Route>
             <Route path="/curriculo">
-              <Curriculo/>
+              <Curriculo curriculo={data.curriculo}/>
             </Route>
             <Route path="/ProjectDetail/:id">
-              <ProjectDetail/>
+              <ProjectDetail projects={data.projects}/>
             </Route>
           </Switch>
         </div>

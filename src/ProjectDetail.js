@@ -1,19 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Slide } from 'react-slideshow-image';
 import { Image } from "react-native";
 import {useParams} from "react-router-dom";
 import 'react-slideshow-image/dist/styles.css';
-import data from './db.json';
 
-const ProjectDetail = () => {
-
+const ProjectDetail = ({projects}) => {
+    
     const {id}=useParams();
 
-    const project=data.projects.at(id-1);
+    const project=projects.at(id-1);
+
+    const [ altura, setAltura ] = useState()
+
+    useEffect(() => {
+        setAltura( document.getElementById('descricao').clientHeight)
+        console.log(altura);
+    },[altura]);
 
     return ( 
         <div className="project-detail dark-grey">
-            {data && (
             
             <div className="project">
                 <div>
@@ -27,25 +32,24 @@ const ProjectDetail = () => {
                 </Slide>
                 </div>
 
+                <div className="light-grey">
                 <div className="w3-container w3-content w3-padding-64" style={{maxWidth:1400}}>
-                    <h2 className="w3-wide w3-center w3-text-white">PROJETOS</h2>
                     <div className="w3-row-padding w3-padding-32">
-                        
                         <div className="w3-col l6 w3-padding-large">
-                            <Image className="w3-image w3-opacity-min" source={project.extras[0]} alt="Sem Imagem" style={{resizeMode: "cover",height: 580,"width": "100%"}}/>
+                            <Image className="w3-image w3-opacity-min" source={project.extras[0]} alt="Sem Imagem" style={{resizeMode: "cover",height: altura, "width": "100%"}}/>
                         </div>
                         
                         
-                        <div className="w3-col w3-half w3-padding-64 light-grey link">
+                        <div className="w3-col w3-half w3-padding-64 link" id="descricao">
                             <div style={{paddingLeft:32, paddingRight:32}}>
                                 <h1 className="w3-center">Sobre o Projeto</h1>
                                 <h5 className="w3-center w3-opacity">feito em: {project.date}</h5>
-                                <div className="w3-center"><h3><a href={project.link}><b>link do projeto</b></a></h3></div>
                                 <p className="w3-large">{project.description}</p>
                                 <p className="w3-large w3-hide-medium">{project.maisInfo}</p>
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
 
                 <div className="w3-container w3-content w3-padding-64" style={{maxWidth:1400}}>
@@ -65,7 +69,6 @@ const ProjectDetail = () => {
                     </div>
                 </div>
             </div>
-            )}
         </div>
      );
 }
