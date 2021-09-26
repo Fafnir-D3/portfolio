@@ -5,22 +5,23 @@ const Curriculo = ({curriculo}) => {
     const meuCurriculo=curriculo.at(0);
 
     return ( 
-        <div class="w3-content dark-grey" style={{maxWidth:2000, paddingLeft:100,paddingRight:100, paddingTop:10}}>
+<div class="w3-content dark-grey" style={{maxWidth:2000, paddingLeft:100,paddingRight:100, paddingTop:10}}>
 
   <div class="w3-row-padding">
   
     <div class="w3-third">
     
       <div class="light-grey w3-text-white w3-card-4">
+        
         <div className="w3-black">
-        <div><Image source="/img/fotoFundoPreto.png"  style={{backgroundColor: "#000",resizeMode: "cover",height: 350,"width": "100%"}}/>
-        </div>
+          <Image source="/img/fotoFundoPreto.png"  style={{backgroundColor: "#000",resizeMode: "cover",height: 350,"width": "100%"}}/>
         </div>
         <div class="w3-display-container">
             <div class="w3-display-bottomleft w3-container">
                 <h2 className="w3-text-white" ><b>{meuCurriculo.nome}</b></h2>
             </div>
         </div>
+
         <div class="w3-container link">
           <p>Vaga: Estágio</p>
           <p>Niterói, RJ</p>
@@ -34,6 +35,7 @@ const Curriculo = ({curriculo}) => {
             </div>
             ))}
         </div>
+
       </div>
 
     </div>
@@ -46,7 +48,7 @@ const Curriculo = ({curriculo}) => {
           <p class="w3-opacity-min">{meuCurriculo.objetivo}</p>
         </div>
         <div class="w3-container">
-        <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge "></i>Resumo</h2>
+          <h2 class="w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge "></i>Resumo</h2>
           <p class="w3-opacity-min">{meuCurriculo.resumo}</p>
         </div>
       </div>
@@ -64,9 +66,9 @@ const Curriculo = ({curriculo}) => {
           <p>English Proficiency (Listening, Reading and Grammar)</p>
         </div>
       </div>
-      
+
     </div>
-    
+
   </div>
   
 </div>
