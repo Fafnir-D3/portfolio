@@ -16,12 +16,14 @@ const Home = ({projects}) => {
 
     return (
 <div className="w3-row home">
-    <Slide easing="ease">
-    {projects.map((project, index)=> (
-    <div className="each-slide w3-display-container w3-center w3-black" id="home" key={index}>
-        <div className="w3-opacity " style={{width: "100%",backgroundImage: `url(${project.img})`}}></div>
+    <div className="meusSlides">
+        <Slide easing="ease">
+        {projects.map((project, index)=> (
+        <div className="each-slide w3-display-container w3-center w3-black" id="home" key={index}>
+            <div className="w3-opacity " style={{width: "100%",backgroundImage: `url(${project.img})`}}></div>
+        </div>
+        ))}</Slide>
     </div>
-    ))}</Slide>
             
     <div class="w3-container w3-content w3-padding-64" style={{maxWidth:800}}>
         

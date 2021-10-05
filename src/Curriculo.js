@@ -5,7 +5,7 @@ const Curriculo = ({curriculo}) => {
     const meuCurriculo=curriculo.at(0);
 
     return ( 
-<div class="w3-content dark-grey" style={{maxWidth:2000, paddingLeft:100,paddingRight:100, paddingTop:10}}>
+<div class="curriculo dark-grey w3-mobile">
 
   <div class="w3-row-padding">
   
@@ -30,7 +30,7 @@ const Curriculo = ({curriculo}) => {
 
             <p class="w3-large"><b><i class="w3-margin-right"></i>Principais linguagens e Tecnologias</b></p>
             {meuCurriculo.tecnologias.map((tecnologia, index) => (
-              <div className="w3-quarter w3-auto w3-center w3-container w3-white w3-round-xlarge" style={{margin:18}}>
+              <div className="w3-quarter w3-auto w3-center w3-container w3-white w3-round-xlarge" style={{margin:10}}>
               <div className="w3-round-xlarge"><p className="w3-text-black">{tecnologia}</p></div>
             </div>
             ))}

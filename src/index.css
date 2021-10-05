@@ -22,6 +22,24 @@
   justify-content: center;
 }
 
+.curriculo {
+  max-width:2000px;
+  padding-left:100px;
+  padding-right:100px;
+  padding-top: 10px;
+}
+
+@media (max-width:600px){
+  .curriculo {
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 10px;
+  }
+  .meusSlides {
+    display: none;
+  }
+}
+
 /* ------------------- Minhas cores --------------- */
 
 .almost-black,.almost-black:hover{color:#FFFFFF !important;background-color:#23272A !important}

@@ -20,7 +20,7 @@ const ProjectDetail = ({projects}) => {
     return ( 
 <div className="project-detail dark-grey">
     
-    <div id="slides">
+    <div className="meusSlides" id="slides">
     <Slide easing="ease">
         {project.slides.map((slideImage, index)=> (
         <div className="each-slide" key={index}>
@@ -35,7 +35,7 @@ const ProjectDetail = ({projects}) => {
 
             <div className="w3-row-padding w3-padding-32">
 
-                <div className="w3-col l6 w3-padding-large">
+                <div className="w3-hide-small w3-col l6 w3-padding-large">
                     <Image className="w3-image w3-opacity-min" source={project.extras[0]} alt="Sem Imagem" style={{resizeMode: "cover",height: altura, "width": "100%"}}/>
                 </div>
                 
