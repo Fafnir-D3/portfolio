@@ -58,7 +58,7 @@ const Home = ({projects}) => {
                 <li class="w3-padding"><Image source="/img/icon2.png" style={styles.icon}/>(21) 99595-4142 </li>
                 <li class="w3-padding"><Image source="/img/icon3.png" style={styles.icon}/>brbuckley@id.uff.br </li>
                 <li class="w3-padding"><Image source="/img/icon4.png" style={styles.icon}/><a href="https://github.com/Fafnir-D3" target="_blank" rel="noopener noreferrer">github.com/Fafnir-D3 </a></li>
-                <li class="w3-padding"><Image source="/img/icon5.png" style={styles.icon}/><a href="https://www.linkedin.com/in/brendan-buckley-702214220/" target="_blank" rel="noopener noreferrer">/brendan-buckley-702214220 </a></li>
+                <li class="w3-padding"><Image source="/img/icon5.png" style={styles.icon}/><a href="https://www.linkedin.com/in/brendan-buckley-702214220/" target="_blank" rel="noopener noreferrer">linkedin/brendan-buckley </a></li>
             </ul>
 
         </div>

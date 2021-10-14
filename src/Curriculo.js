@@ -23,10 +23,13 @@ const Curriculo = ({curriculo}) => {
         </div>
 
         <div class="w3-container link">
-          <p>Vaga: Estágio</p>
-          <p>Niterói, RJ</p>
-          <p>brbuckley@id.uff.br</p>
-          <p><a href="https://github.com/Fafnir-D3"><b>github.com/Fafnir-D3</b></a></p>
+          <div style={{margin:10}}>
+            <p><b>Vaga:</b> Estágio</p>
+            <p>Niterói, RJ</p>
+            <p>brbuckley@id.uff.br</p>
+            <p><a href="https://github.com/Fafnir-D3"><b>github.com/Fafnir-D3</b></a></p>
+            <p><a href="https://www.linkedin.com/in/brendan-buckley-702214220/"><b>linkedin/brendan-buckley</b></a></p>
+          </div>
 
             <p class="w3-large"><b><i class="w3-margin-right"></i>Principais linguagens e Tecnologias</b></p>
             {meuCurriculo.tecnologias.map((tecnologia, index) => (
